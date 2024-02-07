@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BABFT Line Creator</title>
+
+	<link rel="stylesheet" href="style.css">
+	<script type="module" src="main.js"></script>
+</head>
+<body>
+	<div class="sidemenu">
+		<button class="sidemenu-close" onclick="this.parentElement.classList.toggle('closed');">Toggle</button>
+		<div class="section-content">
+			<h1 style="margin: 0;">Create Line</h1>
+			<!-- <h2 style="margin: 0;">for babft</h2> -->
+			<p style="margin: 0.5rem 0 0;">White wall represents the team flag direction.</p>
+			<p style="margin: 0.5rem 0 0;">Usage example: place a block with two of it's corners touching the start and end point of your line, then get the scale of the block using the scale tool and input it down below, lastly select starting and ending points. you will get rotations needed for the line.<br>(make sure match rotation is off when placing the block for the line)</p>
+		</div>
+		<div class="section-content">
+			<label>
+				<input type="checkbox" id="hide-wireframe"> Hide Wireframe
+			</label><br>
+			<label>
+				<input type="checkbox" id="hide-blocks"> Hide blocks
+			</label>
+		</div>
+		<div class="section-content">
+			<label class="field-input" style="display: block;">
+				<h2 style="margin: 0;">Block Scale</h2>
+			</label>
+			<label class="field-input">
+				X: <input type="number" id="block-x" value="2">
+			</label>
+			<label class="field-input">
+				Y: <input type="number" id="block-y" value="2">
+			</label>
+			<label class="field-input">
+				Z: <input type="number" id="block-z" value="2">
+			</label>
+			<label class="field-input">
+				Starting Point: <button id="start-selector">Select Corner</button>
+			</label>
+			<label class="field-input">
+				Ending Point: <button id="end-selector">Select Corner</button>
+			</label>
+		</div>
+		<div class="section-content">
+			<label class="field-input">
+				Rotate: <span id="rotate-angle">3x90 + 45, 315</span>°
+			</label>
+			<label class="field-input">
+				Tilt: <span id="tilt-angle">45</span>°
+			</label>
+		</div>
+		<div style="flex-grow: 1;"></div>
+		<div class="section-content">
+			Made by <a href="https://www.youtube.com/AmeerYT?sub_confirmation=1">Ameer!</a><br>
+			Idea by <a href="https://www.youtube.com/channel/UCJY3dZtCAJFeip5KY-sfcvA?sub_confirmation=1">MeNamesShock</a>
+		</div>
+	</div>
+</body>
+</html>
